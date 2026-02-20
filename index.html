@@ -1,0 +1,178 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David Gao</title>
+    <meta name="description" content="David Gao - Electrical Engineering student focused on SoC, digital design, and hardware systems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=General+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="sidebar-inner">
+          <img class="profile" src="images/pam4-eye.png" alt="PAM4 eye diagram illustration" />
+          <p class="eyebrow">David Gao</p>
+          <h1>Electrical engineering with a focus on high-speed digital systems.</h1>
+          <p class="subhead">SoC verification, digital design, and research that balances clarity, performance, and signal integrity.</p>
+          <div class="contact-buttons">
+            <a class="button primary" href="mailto:d37gao@uwaterloo.ca">Email</a>
+            <a class="button ghost" href="https://github.com/davvdf" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button ghost" href="https://www.linkedin.com/in/david-q-gao/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <div class="sidebar-meta">
+            <p class="muted">Based in Waterloo & Toronto</p>
+            <p class="muted">Open to internships & research</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section id="projects" class="section">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <p class="muted">Selected builds with documentation on GitHub.</p>
+          </div>
+          <div class="project-grid">
+            <article class="card project">
+              <div class="project-media">
+                <img src="images/placeholder-matrix.png" alt="Matrix Vector Multiplier placeholder" />
+              </div>
+              <h3>Matrix Vector Multiplier</h3>
+              <p>
+                Analog IC design for an 8-bit segmented DAC enabling matrix-vector multiplication, focused on
+                robustness across PVT variations.
+              </p>
+              <a class="link" href="https://github.com/UW-ASIC/Matrix-Vector-Multiplier" target="_blank" rel="noreferrer">
+                <span class="arrow">&gt;</span>
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.36 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.86-.01-1.7-2.78.62-3.37-1.38-3.37-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.07 1.53 1.07.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.06.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.4.2 2.44.1 2.7.64.73 1.03 1.66 1.03 2.79 0 3.96-2.34 4.83-4.57 5.09.36.33.68.97.68 1.95 0 1.41-.01 2.55-.01 2.9 0 .27.18.6.69.49 3.97-1.35 6.83-5.18 6.83-9.71C22 6.58 17.52 2 12 2Z" />
+                  </svg>
+                </span>
+              </a>
+            </article>
+            <article class="card project">
+              <div class="project-media">
+                <img src="images/placeholder-sram.png" alt="SRAM Precharge placeholder" />
+              </div>
+              <h3>SRAM Precharge and Equalization</h3>
+              <p>
+                Designed precharge/equalization circuitry on SkyWater 130nm and validated non-destructive reads via
+                Monte Carlo simulation.
+              </p>
+              <a class="link" href="https://github.com/davvdf/SRAM_precharge_access" target="_blank" rel="noreferrer">
+                <span class="arrow">&gt;</span>
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.36 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.86-.01-1.7-2.78.62-3.37-1.38-3.37-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.07 1.53 1.07.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.06.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.4.2 2.44.1 2.7.64.73 1.03 1.66 1.03 2.79 0 3.96-2.34 4.83-4.57 5.09.36.33.68.97.68 1.95 0 1.41-.01 2.55-.01 2.9 0 .27.18.6.69.49 3.97-1.35 6.83-5.18 6.83-9.71C22 6.58 17.52 2 12 2Z" />
+                  </svg>
+                </span>
+              </a>
+            </article>
+            <article class="card project">
+              <div class="project-media">
+                <img src="images/placeholder-vitracker.png" alt="Vitracker placeholder" />
+              </div>
+              <h3>Vitracker</h3>
+              <p>
+                Vision tracking system integrating ORB features with IMU tagging for robust real-time SLAM.
+              </p>
+              <a class="link" href="https://github.com/uwrealitylabs/vitracker" target="_blank" rel="noreferrer">
+                <span class="arrow">&gt;</span>
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.53 2.87 8.36 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-.86-.01-1.7-2.78.62-3.37-1.38-3.37-1.38-.45-1.2-1.1-1.52-1.1-1.52-.9-.63.07-.62.07-.62 1 .07 1.53 1.07 1.53 1.07.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.64-1.38-2.22-.26-4.56-1.15-4.56-5.1 0-1.13.39-2.06 1.03-2.79-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.06.8-.23 1.65-.35 2.5-.35.85 0 1.7.12 2.5.35 1.91-1.34 2.75-1.06 2.75-1.06.55 1.4.2 2.44.1 2.7.64.73 1.03 1.66 1.03 2.79 0 3.96-2.34 4.83-4.57 5.09.36.33.68.97.68 1.95 0 1.41-.01 2.55-.01 2.9 0 .27.18.6.69.49 3.97-1.35 6.83-5.18 6.83-9.71C22 6.58 17.52 2 12 2Z" />
+                  </svg>
+                </span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="section">
+          <div class="section-header">
+            <h2>Experience</h2>
+            <p class="muted">Industry roles focused on SoC verification, digital design, and hardware debugging.</p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <h3>SoC Engineering Intern</h3>
+                <p>Arm · Toronto, ON</p>
+                <p class="muted">Jan 2026 - Present</p>
+              </div>
+              <ul>
+                <li>Accelerated AMBA AXI/CHI trace parsing with hashmap-based data structures, cutting memory 64x and boosting speed 28x.</li>
+                <li>Maintained SystemVerilog testbenches for multi-die Ethernet and PCIe datapath performance verification.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <h3>Digital Design Engineering Intern</h3>
+                <p>Altera · Toronto, ON</p>
+                <p class="muted">May 2025 - Aug 2025</p>
+              </div>
+              <ul>
+                <li>Built a frequency checker module in SystemVerilog with CDC-safe handshaking and comprehensive SDC constraints.</li>
+                <li>Coordinated with firmware to resolve SERDES issues and deliver the transceiver IP program on schedule.</li>
+                <li>Optimized MAC datapath components (counters, FIFOs, adders, muxes) to improve LUT usage and fMAX.</li>
+                <li>Migrated cron-based automation to a scalable weekly regression framework in Perl.</li>
+              </ul>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <h3>Graphics Hardware Engineering Intern</h3>
+                <p>Intel · Toronto, ON</p>
+                <p class="muted">Sep 2024 - Dec 2024</p>
+              </div>
+              <ul>
+                <li>Designed a 4-layer HDMI-DisplayPort switcher PCB with impedance control for reliable automated testing.</li>
+                <li>Debugged hardware and software issues using lab instrumentation, WinDbg, and structured triage.</li>
+                <li>Investigated GDDR6 signal integrity through shmoo analysis and Python-based test automation.</li>
+                <li>Executed power-cycle and PCIe test plans across 20+ motherboard platforms.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+                <section id="extracurricular" class="section">
+          <div class="section-header">
+            <h2>Extracurricular + Research</h2>
+            <p class="muted">University research, labs, and community engineering work.</p>
+          </div>
+          <div class="split">
+            <div class="card">
+              <h3>Analog IC Design Engineer</h3>
+              <p>UWASIC</p>
+              <p>Designed an 8-bit segmented DAC for an analog matrix-vector multiplier, characterizing INL, DNL, and PVT stability.</p>
+            </div>
+            <div class="card">
+              <h3>SoC Engineer</h3>
+              <p>UW Reality Labs</p>
+              <p>Architecting an SoC with ORB vision acceleration and IMU tagging for real-time SLAM on CPU.</p>
+            </div>
+            <div class="card">
+              <h3>FPGA Research Assistant</h3>
+              <p>University of Waterloo &middot; Dr. Mina Arashloo</p>
+              <p>Building a protocol-agnostic transport-layer FPGA accelerator on Alveo U250 with rate-variable FIFO design for DCQCN-enabled RoCEv2.</p>
+            </div>
+            <div class="card">
+              <h3>Optical Research Assistant</h3>
+              <p>Photomedicine Labs &middot; Dr. Parsin Haji Reza</p>
+              <p>Supported multi-digitizer card bring-up for higher-bandwidth imaging to enable molecular differentiation.</p>
+            </div>
+          </div>
+        </section>
+
+
+        <footer class="site-footer">
+          <p>© 2026 David Gao. Built for GitHub Pages.</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
