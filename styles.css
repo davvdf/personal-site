@@ -178,20 +178,77 @@ a {
   flex-direction: column;
 }
 
-.project-media {
-  margin: 0 0 1rem;
-  border-radius: 16px;
+.project-carousel {
+  position: relative;
   overflow: hidden;
+  border-radius: 16px;
   border: 1px dashed rgba(179, 148, 216, 0.35);
   background: rgba(20, 20, 26, 0.4);
+  margin: 0 0 1rem;
 }
 
-.project-media img {
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
   width: 100%;
   display: block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  opacity: 0.85;
+  opacity: 0.9;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(179, 148, 216, 0.4);
+  background: rgba(15, 14, 22, 0.6);
+  color: var(--accent-strong);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-btn.prev {
+  left: 12px;
+}
+
+.carousel-btn.next {
+  right: 12px;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(179, 148, 216, 0.35);
+  cursor: pointer;
+}
+
+.carousel-dots .dot.is-active {
+  background: var(--accent-strong);
 }
 
 .project p {

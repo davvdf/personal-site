@@ -18,6 +18,7 @@
           <p class="eyebrow">David Gao</p>
           <h1>Electrical engineering with a focus on high-speed digital systems.</h1>
           <p class="subhead">SoC verification, digital design, and research that balances clarity, performance, and signal integrity.</p>
+          <p class="subhead muted">Previously at Arm, Altera, and Intel.</p>
           <div class="contact-buttons">
             <a class="button primary" href="mailto:d37gao@uwaterloo.ca">Email</a>
             <a class="button ghost" href="https://github.com/davvdf" target="_blank" rel="noreferrer">GitHub</a>
@@ -31,22 +32,31 @@
       </aside>
 
       <main class="content">
-        <section id="projects" class="section">
+                <section id="projects" class="section">
           <div class="section-header">
             <h2>Projects</h2>
             <p class="muted">Selected builds with documentation on GitHub.</p>
           </div>
           <div class="project-grid">
             <article class="card project">
-              <div class="project-media">
-                <img src="images/placeholder-matrix.png" alt="Matrix Vector Multiplier placeholder" />
+              <div class="project-carousel" data-carousel>
+                <button class="carousel-btn prev" data-prev aria-label="Previous image">&#8592;</button>
+                <div class="carousel-track">
+                  <div class="slide"><img src="images/matrix/01.png" alt="Matrix Vector Multiplier image 1" /></div>
+                  <div class="slide"><img src="images/matrix/02.png" alt="Matrix Vector Multiplier image 2" /></div>
+                </div>
+                <button class="carousel-btn next" data-next aria-label="Next image">&#8594;</button>
+                <div class="carousel-dots">
+                  <button class="dot" data-dot="0" aria-label="Matrix Vector Multiplier slide 1"></button>
+                  <button class="dot" data-dot="1" aria-label="Matrix Vector Multiplier slide 2"></button>
+                </div>
               </div>
               <h3>Matrix Vector Multiplier</h3>
               <p>
                 Analog IC design for an 8-bit segmented DAC enabling matrix-vector multiplication, focused on
                 robustness across PVT variations.
               </p>
-              <a class="link" href="https://github.com/UW-ASIC/Matrix-Vector-Multiplier" target="_blank" rel="noreferrer">
+              <a class="link" href="https://github.com/davvdf/matrixvectormultiplier" target="_blank" rel="noreferrer">
                 <span class="arrow">&gt;</span>
                 <span class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
@@ -56,15 +66,26 @@
               </a>
             </article>
             <article class="card project">
-              <div class="project-media">
-                <img src="images/placeholder-sram.png" alt="SRAM Precharge placeholder" />
+              <div class="project-carousel" data-carousel>
+                <button class="carousel-btn prev" data-prev aria-label="Previous image">&#8592;</button>
+                <div class="carousel-track">
+                  <div class="slide"><img src="images/sram/01.png" alt="SRAM Precharge image 1" /></div>
+                  <div class="slide"><img src="images/sram/02.png" alt="SRAM Precharge image 2" /></div>
+                  <div class="slide"><img src="images/sram/03.png" alt="SRAM Precharge image 3" /></div>
+                </div>
+                <button class="carousel-btn next" data-next aria-label="Next image">&#8594;</button>
+                <div class="carousel-dots">
+                  <button class="dot" data-dot="0" aria-label="SRAM Precharge slide 1"></button>
+                  <button class="dot" data-dot="1" aria-label="SRAM Precharge slide 2"></button>
+                  <button class="dot" data-dot="2" aria-label="SRAM Precharge slide 3"></button>
+                </div>
               </div>
               <h3>SRAM Precharge and Equalization</h3>
               <p>
                 Designed precharge/equalization circuitry on SkyWater 130nm and validated non-destructive reads via
                 Monte Carlo simulation.
               </p>
-              <a class="link" href="https://github.com/davvdf/SRAM_precharge_access" target="_blank" rel="noreferrer">
+              <a class="link" href="https://github.com/davvdf/sram-precharge" target="_blank" rel="noreferrer">
                 <span class="arrow">&gt;</span>
                 <span class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
@@ -74,14 +95,21 @@
               </a>
             </article>
             <article class="card project">
-              <div class="project-media">
-                <img src="images/placeholder-vitracker.png" alt="Vitracker placeholder" />
+              <div class="project-carousel" data-carousel>
+                <button class="carousel-btn prev" data-prev aria-label="Previous image">&#8592;</button>
+                <div class="carousel-track">
+                  <div class="slide"><img src="images/vitracker/01.png" alt="Vitracker image 1" /></div>
+                </div>
+                <button class="carousel-btn next" data-next aria-label="Next image">&#8594;</button>
+                <div class="carousel-dots">
+                  <button class="dot" data-dot="0" aria-label="Vitracker slide 1"></button>
+                </div>
               </div>
               <h3>Vitracker</h3>
               <p>
                 Vision tracking system integrating ORB features with IMU tagging for robust real-time SLAM.
               </p>
-              <a class="link" href="https://github.com/uwrealitylabs/vitracker" target="_blank" rel="noreferrer">
+              <a class="link" href="https://github.com/davvdf/vitracker" target="_blank" rel="noreferrer">
                 <span class="arrow">&gt;</span>
                 <span class="icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
@@ -92,6 +120,7 @@
             </article>
           </div>
         </section>
+
 
         <section id="experience" class="section">
           <div class="section-header">
@@ -174,5 +203,6 @@
         </footer>
       </main>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
